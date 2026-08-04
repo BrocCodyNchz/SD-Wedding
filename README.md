@@ -29,12 +29,24 @@ Open `index.html` in a browser, or from this folder:
 npx serve .
 ```
 
+## Live site
+
+- **Production:** https://sd-wedding.vercel.app
+- **GitHub:** https://github.com/BrocCodyNchz/SD-Wedding
+
+Point your QR code at the production URL above.
+
 ## Deploy on Vercel
 
-1. Import this folder (or push to GitHub and import the repo).
-2. Framework preset: **Other** (no build command).
-3. Output directory: project root.
-4. Deploy, then point your QR code at the Vercel URL.
+Already configured as a static site (`vercel.json`, no build step).
+
+To redeploy from this folder:
+
+```bash
+npx vercel --prod
+```
+
+Or connect the GitHub repo in the Vercel dashboard so every push to `main` deploys automatically.
 
 ## Brand
 
