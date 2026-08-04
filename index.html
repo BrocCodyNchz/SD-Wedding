@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savannah &amp; Denver — Honeymoon Fund</title>
+    <meta
+      name="description"
+      content="Contribute to Savannah & Denver's honeymoon fund via Venmo, Cash App, or Zelle."
+    />
+    <meta name="theme-color" content="#F3EDE3" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--
+      AI artifact: agent_graphics_v1 + agent_branding_v1
+      date: 2026-08-03
+      brand: docs/brand/BRAND_BRIEF.md (cream / rust / sage)
+      review: pending human
+    -->
+    <main class="page">
+      <div class="hero-photo">
+        <img
+          src="assets/images/couple.jpg"
+          alt="Savannah and Denver"
+          width="1200"
+          height="1600"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </div>
+
+      <header class="hero">
+        <p class="eyebrow">Honeymoon Fund</p>
+        <h1 class="names">
+          Savannah
+          <span class="ampersand" aria-hidden="true">&amp;</span>
+          <span class="visually-hidden">and</span>
+          Denver
+        </h1>
+        <p class="lede">
+          Thank you for celebrating with us. A gift toward our honeymoon means
+          the world.
+        </p>
+
+        <nav class="payments" aria-label="Payment options">
+          <a
+            class="pay-btn"
+            href="https://venmo.com/u/Savannahv1351"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="pay-label">Venmo</span>
+            <span class="pay-handle">@Savannahv1351</span>
+          </a>
+
+          <a
+            class="pay-btn"
+            href="https://cash.app/$Savannahv1351"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="pay-label">Cash App</span>
+            <span class="pay-handle">$Savannahv1351</span>
+          </a>
+
+          <button
+            type="button"
+            class="pay-btn"
+            id="zelle-btn"
+            aria-describedby="zelle-note"
+          >
+            <span class="pay-label">Zelle</span>
+            <span class="pay-handle">7063056200</span>
+          </button>
+        </nav>
+
+        <p class="note" id="zelle-note" role="status" aria-live="polite">
+          Tap Zelle to copy the number for your banking app.
+        </p>
+      </header>
+    </main>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
